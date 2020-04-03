@@ -1,5 +1,5 @@
 {
-    "name": "marshmallow/nova-generate-string",
+    "name": "marshmallow/nova-field-string-generator",
     "description": "A Laravel Nova field for generating a random string. This can be used for a Text field and for a Password field.",
     "keywords": [
         "laravel",
