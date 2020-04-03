@@ -1,0 +1,30 @@
+{
+    "name": "marshmallow/nova-generate-string",
+    "description": "A Laravel Nova field for generating a random string. This can be used for a Text field and for a Password field.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "password"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marshmallow\\NovaGenerateString\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marshmallow\\NovaGenerateString\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
