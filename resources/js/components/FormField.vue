@@ -9,11 +9,7 @@
                        autocomplete="off"
                        v-model="value"/>
                 <input type="button" class="btn btn-default btn-outline-primary ml-3 cursor-pointer" value="Generate" v-on:click="generate();">
-                <div class="tooltip">
-                    <button type="button" class="btn btn-default btn-outline-grey ml-3 cursor-pointer" v-on:click="copyPassword()">
-                        Copy
-                    </button>
-                </div>
+                <input type="button" class="btn btn-default btn-outline-grey ml-3 cursor-pointer" value="Copy" v-on:click="copyPassword();">
             </div>
             <p v-if="hasError" class="my-2 text-danger">
                 {{ firstError }}
