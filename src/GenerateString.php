@@ -7,6 +7,7 @@ use Marshmallow\NovaGenerateString\Traits\GenerateStringTrait;
 
 class GenerateString extends Text
 {
-	public $component = 'generate-password';
+    public $component = 'generate-password';
+
     use GenerateStringTrait;
 }

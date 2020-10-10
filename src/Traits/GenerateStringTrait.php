@@ -7,14 +7,14 @@ trait GenerateStringTrait
     public function length($length)
     {
         return $this->withMeta([
-            'length' => $length
+            'length' => $length,
         ]);
     }
 
     public function excludeRules($rules)
     {
         return $this->withMeta([
-            'exclude_rules' => $rules
+            'exclude_rules' => $rules,
         ]);
     }
 }
