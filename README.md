@@ -14,16 +14,16 @@ use Marshmallow\NovaGenerateString\GenerateString;
 
 and add in the fields
 
-GenerateString::make('Password')
+GenerateString::make(__('Random string'), 'random_string')
     ->onlyOnForms()
-    ->creationRules('required', 'string', 'min:6')
-    ->updateRules('nullable', 'string', 'min:6')
+    ->creationRules('required', 'string', 'min:12')
+    ->updateRules('nullable', 'string', 'min:12')
     //You can specifiy the password length here
     ->length(12)
-    //exclude characters types from password (Symbols, Numbers. Uppercase, Lowercase), do not call method to include all types
-    ->excludeRules(['Symbols']),
+    //exclude characters types from password (Symbols, Numbers. Uppercase, Lowercase, Similar), do not call method to include all types
+    ->excludeRules(['Symbols', 'Lowercase', 'Similar']),
 
-GeneratePassword::make('Password'),
+GeneratePassword::make(__('Password'), 'password'),
 
 ## License:
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

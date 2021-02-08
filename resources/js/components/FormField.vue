@@ -44,16 +44,26 @@ export default {
                 chars += '!@#$%^&*()-+<>'
               }
               if (!this.field.exclude_rules.includes('numbers')){
-                chars += '1234567890'
+
+                chars += '34679'
+                if (!this.field.exclude_rules.includes('similar')){
+                    chars += '01852'
+                }
               }
               if (!this.field.exclude_rules.includes('uppercase')){
-                chars += 'ABCDEFGHIJKLMNOP'
+                chars += 'ACEFGHKMNPRTUVWXY'
+                if (!this.field.exclude_rules.includes('similar')){
+                    chars += 'ODQILJBSZ'
+                }
               }
               if (!this.field.exclude_rules.includes('lowercase')){
-                chars += 'abcdefghijklmnopqrstuvwxyz'
+                chars += 'abcdefghijklmnpqrstuvwxyz'
+                if (!this.field.exclude_rules.includes('similar')){
+                    chars += 'o'
+                }
               }
             } else{
-              chars = 'abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>1234567890ABCDEFGHIJKLMNOP';
+                chars = 'abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
             }
 
             var pass = "";
