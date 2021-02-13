@@ -6,7 +6,7 @@ A Laravel Nova field for generating a random string
 You can install the package in to a Laravel app that uses Nova via composer:
 
 ```bash
-composer require marshmallow/nova-generate-string
+composer require marshmallow/nova-field-string-generator
 ```
 
 ```php
