@@ -18,7 +18,7 @@
         "sass": "^1.32.8",
         "sass-loader": "10.*",
         "form-backend-validation": "^2.3.3",
-        "vue-loader": "^16.8.3"
+        "vue-loader": "^17.1.1"
     },
     "dependencies": {
         "@inertiajs/inertia": "^0.11.0",
