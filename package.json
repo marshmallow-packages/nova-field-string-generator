@@ -16,7 +16,7 @@
         "postcss": "^8.4.13",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.32.8",
-        "sass-loader": "10.*",
+        "sass-loader": "13.*",
         "form-backend-validation": "^2.3.3",
         "vue-loader": "^17.2.2"
     },
