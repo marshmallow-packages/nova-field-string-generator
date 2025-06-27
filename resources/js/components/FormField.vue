@@ -10,6 +10,7 @@
                     :placeholder="field.name"
                     autocomplete="off"
                     v-model="value"
+                    ref="fieldInput"
                 />
                 <DefaultButton
                     type="button"
@@ -97,8 +98,9 @@
                 this.value = pass;
             },
             copyPassword() {
-                var copyText = document.getElementById(this.field.name);
+                var copyText = this.$refs.fieldInput;
                 var tooltip = document.getElementById("myTooltip");
+                
                 if (copyText.value.length > 0) {
                     copyText.select();
                     document.execCommand("copy");
