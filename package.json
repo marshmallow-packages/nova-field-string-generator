@@ -10,7 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@vue/babel-plugin-jsx": "^1.1.1",
+        "@vue/babel-plugin-jsx": "^2.0.1",
         "@vue/compiler-sfc": "^3.2.22",
         "laravel-mix": "^6.0.41",
         "postcss": "^8.4.13",
